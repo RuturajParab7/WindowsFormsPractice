@@ -1,0 +1,12 @@
+C:\Users\Ruturaj\source\repos\DebuggingPractice\PracticeApplication\PracticeApplication\bin\Debug\PracticeApplication.exe.config
+C:\Users\Ruturaj\source\repos\DebuggingPractice\PracticeApplication\PracticeApplication\bin\Debug\PracticeApplication.exe
+C:\Users\Ruturaj\source\repos\DebuggingPractice\PracticeApplication\PracticeApplication\bin\Debug\PracticeApplication.pdb
+C:\Users\Ruturaj\source\repos\DebuggingPractice\PracticeApplication\PracticeApplication\obj\Debug\PracticeApplication.csproj.AssemblyReference.cache
+C:\Users\Ruturaj\source\repos\DebuggingPractice\PracticeApplication\PracticeApplication\obj\Debug\PracticeApplication.Form1.resources
+C:\Users\Ruturaj\source\repos\DebuggingPractice\PracticeApplication\PracticeApplication\obj\Debug\PracticeApplication.Properties.Resources.resources
+C:\Users\Ruturaj\source\repos\DebuggingPractice\PracticeApplication\PracticeApplication\obj\Debug\PracticeApplication.csproj.GenerateResource.cache
+C:\Users\Ruturaj\source\repos\DebuggingPractice\PracticeApplication\PracticeApplication\obj\Debug\PracticeApplication.csproj.CoreCompileInputs.cache
+C:\Users\Ruturaj\source\repos\DebuggingPractice\PracticeApplication\PracticeApplication\obj\Debug\PracticeApplication.exe
+C:\Users\Ruturaj\source\repos\DebuggingPractice\PracticeApplication\PracticeApplication\obj\Debug\PracticeApplication.pdb
+C:\Users\Ruturaj\source\repos\DebuggingPractice\PracticeApplication\PracticeApplication\obj\Debug\PracticeApplication.exe.config
+C:\Users\Ruturaj\source\repos\DebuggingPractice\PracticeApplication\PracticeApplication\obj\Debug\PracticeApplication.Form2.resources
