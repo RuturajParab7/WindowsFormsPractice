@@ -42,6 +42,17 @@
             this.labelCarBrand = new System.Windows.Forms.Label();
             this.btnShowConstants = new System.Windows.Forms.Button();
             this.labelConstants = new System.Windows.Forms.Label();
+            this.txtRadius = new System.Windows.Forms.TextBox();
+            this.btnCalculate = new System.Windows.Forms.Button();
+            this.lblResult = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtNum1 = new System.Windows.Forms.TextBox();
+            this.txtNum2 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.buttonCalculate = new System.Windows.Forms.Button();
+            this.ArithmeticResult = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
@@ -181,11 +192,119 @@
             this.labelConstants.TabIndex = 13;
             this.labelConstants.Text = "Values of pi and speed of light:";
             // 
+            // txtRadius
+            // 
+            this.txtRadius.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.txtRadius.Location = new System.Drawing.Point(347, 372);
+            this.txtRadius.Name = "txtRadius";
+            this.txtRadius.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtRadius.Size = new System.Drawing.Size(128, 22);
+            this.txtRadius.TabIndex = 14;
+            // 
+            // btnCalculate
+            // 
+            this.btnCalculate.Location = new System.Drawing.Point(493, 367);
+            this.btnCalculate.Name = "btnCalculate";
+            this.btnCalculate.Size = new System.Drawing.Size(124, 32);
+            this.btnCalculate.TabIndex = 15;
+            this.btnCalculate.Text = "Calculate area";
+            this.btnCalculate.UseVisualStyleBackColor = true;
+            this.btnCalculate.Click += new System.EventHandler(this.btnCalculate_Click);
+            // 
+            // lblResult
+            // 
+            this.lblResult.AutoSize = true;
+            this.lblResult.Location = new System.Drawing.Point(661, 377);
+            this.lblResult.Name = "lblResult";
+            this.lblResult.Size = new System.Drawing.Size(45, 16);
+            this.lblResult.TabIndex = 16;
+            this.lblResult.Text = "Area : ";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(407, 336);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(156, 16);
+            this.label2.TabIndex = 17;
+            this.label2.Text = "CONSTANTS EXAMPLE";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(222, 466);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(315, 16);
+            this.label3.TabIndex = 18;
+            this.label3.Text = "ARITHMETIC OPERATORS IN WINDOWS FORMS";
+            // 
+            // txtNum1
+            // 
+            this.txtNum1.Location = new System.Drawing.Point(157, 497);
+            this.txtNum1.Name = "txtNum1";
+            this.txtNum1.Size = new System.Drawing.Size(94, 22);
+            this.txtNum1.TabIndex = 19;
+            // 
+            // txtNum2
+            // 
+            this.txtNum2.Location = new System.Drawing.Point(157, 538);
+            this.txtNum2.Name = "txtNum2";
+            this.txtNum2.Size = new System.Drawing.Size(94, 22);
+            this.txtNum2.TabIndex = 20;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(46, 497);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(105, 16);
+            this.label4.TabIndex = 21;
+            this.label4.Text = "Enter number 1 : ";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(46, 544);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(105, 16);
+            this.label5.TabIndex = 22;
+            this.label5.Text = "Enter number 2 : ";
+            // 
+            // buttonCalculate
+            // 
+            this.buttonCalculate.Location = new System.Drawing.Point(296, 507);
+            this.buttonCalculate.Name = "buttonCalculate";
+            this.buttonCalculate.Size = new System.Drawing.Size(107, 43);
+            this.buttonCalculate.TabIndex = 23;
+            this.buttonCalculate.Text = "Calculate";
+            this.buttonCalculate.UseVisualStyleBackColor = true;
+            this.buttonCalculate.Click += new System.EventHandler(this.buttonCalculate_Click);
+            // 
+            // ArithmeticResult
+            // 
+            this.ArithmeticResult.AutoSize = true;
+            this.ArithmeticResult.Location = new System.Drawing.Point(490, 520);
+            this.ArithmeticResult.Name = "ArithmeticResult";
+            this.ArithmeticResult.Size = new System.Drawing.Size(41, 16);
+            this.ArithmeticResult.TabIndex = 24;
+            this.ArithmeticResult.Text = "Reult:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 531);
+            this.ClientSize = new System.Drawing.Size(800, 688);
+            this.Controls.Add(this.ArithmeticResult);
+            this.Controls.Add(this.buttonCalculate);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.txtNum2);
+            this.Controls.Add(this.txtNum1);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lblResult);
+            this.Controls.Add(this.btnCalculate);
+            this.Controls.Add(this.txtRadius);
             this.Controls.Add(this.labelConstants);
             this.Controls.Add(this.btnShowConstants);
             this.Controls.Add(this.labelCarBrand);
@@ -224,6 +343,17 @@
         private System.Windows.Forms.Label labelCarBrand;
         private System.Windows.Forms.Button btnShowConstants;
         private System.Windows.Forms.Label labelConstants;
+        private System.Windows.Forms.TextBox txtRadius;
+        private System.Windows.Forms.Button btnCalculate;
+        private System.Windows.Forms.Label lblResult;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtNum1;
+        private System.Windows.Forms.TextBox txtNum2;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button buttonCalculate;
+        private System.Windows.Forms.Label ArithmeticResult;
     }
 }
 
