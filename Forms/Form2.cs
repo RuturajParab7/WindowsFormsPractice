@@ -44,5 +44,21 @@ namespace PracticeApplication
 
 
         }
+
+        private void btnCompare_Click(object sender, EventArgs e)
+        {
+            int a, b;
+
+            if (int.TryParse(txtA.Text, out a) && int.TryParse(txtB.Text, out b))
+            {
+                string result = $"{a} > {b}: {a > b}\n" +
+                $"{a} == {b}: {a == b}";
+                lblResult.Text = result;
+            }
+            else
+            {
+                lblResult.Text = "Please enter valid integers.";
+            }
+        }
     }
 }

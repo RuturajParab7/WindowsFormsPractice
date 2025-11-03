@@ -34,6 +34,10 @@
             this.labelResult = new System.Windows.Forms.Label();
             this.btnShowRectangle = new System.Windows.Forms.Button();
             this.labelRectangle = new System.Windows.Forms.Label();
+            this.txtA = new System.Windows.Forms.TextBox();
+            this.txtB = new System.Windows.Forms.TextBox();
+            this.btnCompare = new System.Windows.Forms.Button();
+            this.lblResult = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // labelPrompt
@@ -89,11 +93,48 @@
             this.labelRectangle.Size = new System.Drawing.Size(0, 16);
             this.labelRectangle.TabIndex = 5;
             // 
+            // txtA
+            // 
+            this.txtA.Location = new System.Drawing.Point(37, 197);
+            this.txtA.Name = "txtA";
+            this.txtA.Size = new System.Drawing.Size(100, 22);
+            this.txtA.TabIndex = 6;
+            // 
+            // txtB
+            // 
+            this.txtB.Location = new System.Drawing.Point(37, 259);
+            this.txtB.Name = "txtB";
+            this.txtB.Size = new System.Drawing.Size(100, 22);
+            this.txtB.TabIndex = 7;
+            // 
+            // btnCompare
+            // 
+            this.btnCompare.Location = new System.Drawing.Point(143, 223);
+            this.btnCompare.Name = "btnCompare";
+            this.btnCompare.Size = new System.Drawing.Size(94, 30);
+            this.btnCompare.TabIndex = 8;
+            this.btnCompare.Text = "COMPARE";
+            this.btnCompare.UseVisualStyleBackColor = true;
+            this.btnCompare.Click += new System.EventHandler(this.btnCompare_Click);
+            // 
+            // lblResult
+            // 
+            this.lblResult.AutoSize = true;
+            this.lblResult.Location = new System.Drawing.Point(259, 230);
+            this.lblResult.Name = "lblResult";
+            this.lblResult.Size = new System.Drawing.Size(45, 16);
+            this.lblResult.TabIndex = 9;
+            this.lblResult.Text = "Result";
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblResult);
+            this.Controls.Add(this.btnCompare);
+            this.Controls.Add(this.txtB);
+            this.Controls.Add(this.txtA);
             this.Controls.Add(this.labelRectangle);
             this.Controls.Add(this.btnShowRectangle);
             this.Controls.Add(this.labelResult);
@@ -115,5 +156,9 @@
         private System.Windows.Forms.Label labelResult;
         private System.Windows.Forms.Button btnShowRectangle;
         private System.Windows.Forms.Label labelRectangle;
+        private System.Windows.Forms.TextBox txtA;
+        private System.Windows.Forms.TextBox txtB;
+        private System.Windows.Forms.Button btnCompare;
+        private System.Windows.Forms.Label lblResult;
     }
 }
