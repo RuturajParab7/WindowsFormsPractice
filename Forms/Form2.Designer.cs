@@ -38,6 +38,9 @@
             this.txtB = new System.Windows.Forms.TextBox();
             this.btnCompare = new System.Windows.Forms.Button();
             this.lblResult = new System.Windows.Forms.Label();
+            this.cmbDay = new System.Windows.Forms.ComboBox();
+            this.btnAnalyze = new System.Windows.Forms.Button();
+            this.Res = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // labelPrompt
@@ -126,11 +129,57 @@
             this.lblResult.TabIndex = 9;
             this.lblResult.Text = "Result";
             // 
+            // cmbDay
+            // 
+            this.cmbDay.FormattingEnabled = true;
+            this.cmbDay.Items.AddRange(new object[] {
+            "Monday",
+            "",
+            "Tuesday",
+            "",
+            "Wednesday",
+            "",
+            "Thursday",
+            "",
+            "Friday",
+            "",
+            "Saturday",
+            "",
+            "Sunday"});
+            this.cmbDay.Location = new System.Drawing.Point(37, 385);
+            this.cmbDay.Name = "cmbDay";
+            this.cmbDay.Size = new System.Drawing.Size(180, 24);
+            this.cmbDay.TabIndex = 10;
+            this.cmbDay.Text = "Select a day of the week";
+            this.cmbDay.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // btnAnalyze
+            // 
+            this.btnAnalyze.Location = new System.Drawing.Point(245, 380);
+            this.btnAnalyze.Name = "btnAnalyze";
+            this.btnAnalyze.Size = new System.Drawing.Size(98, 32);
+            this.btnAnalyze.TabIndex = 11;
+            this.btnAnalyze.Text = "Analyze";
+            this.btnAnalyze.UseVisualStyleBackColor = true;
+            this.btnAnalyze.Click += new System.EventHandler(this.btnAnalyze_Click);
+            // 
+            // Res
+            // 
+            this.Res.AutoSize = true;
+            this.Res.Location = new System.Drawing.Point(376, 388);
+            this.Res.Name = "Res";
+            this.Res.Size = new System.Drawing.Size(45, 16);
+            this.Res.TabIndex = 12;
+            this.Res.Text = "Result";
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 644);
+            this.Controls.Add(this.Res);
+            this.Controls.Add(this.btnAnalyze);
+            this.Controls.Add(this.cmbDay);
             this.Controls.Add(this.lblResult);
             this.Controls.Add(this.btnCompare);
             this.Controls.Add(this.txtB);
@@ -160,5 +209,8 @@
         private System.Windows.Forms.TextBox txtB;
         private System.Windows.Forms.Button btnCompare;
         private System.Windows.Forms.Label lblResult;
+        private System.Windows.Forms.ComboBox cmbDay;
+        private System.Windows.Forms.Button btnAnalyze;
+        private System.Windows.Forms.Label Res;
     }
 }
