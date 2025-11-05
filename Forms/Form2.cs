@@ -102,6 +102,83 @@ namespace PracticeApplication
 
         }
 
-        
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int a;
+
+            if (int.TryParse(txtNum.Text, out a))
+            {
+                string message;
+
+                if (a <= 10)
+                {
+                    message = "The number is less than or equal to 10";
+                }
+
+                else if(a>10 && a<=50)
+                {
+                    message = "The number is greater than 10 and less than or equal to 50";
+                }
+
+                else if (a>50 && a <= 100)
+                {
+                    message = "The number is greater than 50 but less than or equal to 100";
+                }
+
+                else
+                {
+                    message = "Number greater than century";
+                }
+
+                NumLbl.Text = $"{message}\n The actual value of a is : {a}";
+                
+
+            }
+            else
+            {
+                NumLbl.Text = "Enter a valid number";
+            }
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCheck_Click(object sender, EventArgs e)
+        {
+            int age;
+            double income;
+
+            if (int.TryParse(txtAge.Text, out age))
+            {
+                if (double.TryParse(txtIncome.Text, out income))
+                {
+                    if (age >= 21)
+                    {
+                        if (income >= 25000)
+                        {
+                            label4.Text = "Loan Approved!";
+                        }
+                        else
+                        {
+                            label4.Text = "Income too low for loan eligibility.";
+                        }
+                    }
+                    else
+                    {
+                        label4.Text = "Age must be at least 21.";
+                    }
+                }
+                else
+                {
+                    label4.Text = "Please enter a valid income.";
+                }
+            }
+            else
+            {
+                label4.Text = "Please enter a valid age.";
+            }
+        }
     }
 }

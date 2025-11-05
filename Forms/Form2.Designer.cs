@@ -41,6 +41,16 @@
             this.cmbDay = new System.Windows.Forms.ComboBox();
             this.btnAnalyze = new System.Windows.Forms.Button();
             this.Res = new System.Windows.Forms.Label();
+            this.txtNum = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.NumLbl = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtAge = new System.Windows.Forms.TextBox();
+            this.txtIncome = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.btnCheck = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // labelPrompt
@@ -146,7 +156,7 @@
             "Saturday",
             "",
             "Sunday"});
-            this.cmbDay.Location = new System.Drawing.Point(37, 385);
+            this.cmbDay.Location = new System.Drawing.Point(21, 345);
             this.cmbDay.Name = "cmbDay";
             this.cmbDay.Size = new System.Drawing.Size(180, 24);
             this.cmbDay.TabIndex = 10;
@@ -155,7 +165,7 @@
             // 
             // btnAnalyze
             // 
-            this.btnAnalyze.Location = new System.Drawing.Point(245, 380);
+            this.btnAnalyze.Location = new System.Drawing.Point(224, 340);
             this.btnAnalyze.Name = "btnAnalyze";
             this.btnAnalyze.Size = new System.Drawing.Size(98, 32);
             this.btnAnalyze.TabIndex = 11;
@@ -166,17 +176,114 @@
             // Res
             // 
             this.Res.AutoSize = true;
-            this.Res.Location = new System.Drawing.Point(376, 388);
+            this.Res.Location = new System.Drawing.Point(365, 348);
             this.Res.Name = "Res";
             this.Res.Size = new System.Drawing.Size(45, 16);
             this.Res.TabIndex = 12;
             this.Res.Text = "Result";
             // 
+            // txtNum
+            // 
+            this.txtNum.Location = new System.Drawing.Point(612, 197);
+            this.txtNum.Name = "txtNum";
+            this.txtNum.Size = new System.Drawing.Size(130, 22);
+            this.txtNum.TabIndex = 13;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(638, 258);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 14;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // NumLbl
+            // 
+            this.NumLbl.AutoSize = true;
+            this.NumLbl.Location = new System.Drawing.Point(654, 324);
+            this.NumLbl.Name = "NumLbl";
+            this.NumLbl.Size = new System.Drawing.Size(44, 16);
+            this.NumLbl.TabIndex = 15;
+            this.NumLbl.Text = "label1";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(23, 449);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(128, 16);
+            this.label1.TabIndex = 16;
+            this.label1.Text = "Nested if statements";
+            // 
+            // txtAge
+            // 
+            this.txtAge.Location = new System.Drawing.Point(86, 487);
+            this.txtAge.Name = "txtAge";
+            this.txtAge.Size = new System.Drawing.Size(100, 22);
+            this.txtAge.TabIndex = 17;
+            // 
+            // txtIncome
+            // 
+            this.txtIncome.Location = new System.Drawing.Point(86, 526);
+            this.txtIncome.Name = "txtIncome";
+            this.txtIncome.Size = new System.Drawing.Size(100, 22);
+            this.txtIncome.TabIndex = 18;
+            this.txtIncome.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(12, 487);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(65, 16);
+            this.label2.TabIndex = 19;
+            this.label2.Text = "Enter age";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(-2, 526);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(85, 16);
+            this.label3.TabIndex = 20;
+            this.label3.Text = "Enter income";
+            // 
+            // btnCheck
+            // 
+            this.btnCheck.Location = new System.Drawing.Point(26, 563);
+            this.btnCheck.Name = "btnCheck";
+            this.btnCheck.Size = new System.Drawing.Size(133, 33);
+            this.btnCheck.TabIndex = 21;
+            this.btnCheck.Text = "Check status";
+            this.btnCheck.UseVisualStyleBackColor = true;
+            this.btnCheck.Click += new System.EventHandler(this.btnCheck_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(73, 615);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(44, 16);
+            this.label4.TabIndex = 22;
+            this.label4.Text = "label4";
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 644);
+            this.ClientSize = new System.Drawing.Size(800, 694);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.btnCheck);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.txtIncome);
+            this.Controls.Add(this.txtAge);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.NumLbl);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.txtNum);
             this.Controls.Add(this.Res);
             this.Controls.Add(this.btnAnalyze);
             this.Controls.Add(this.cmbDay);
@@ -212,5 +319,15 @@
         private System.Windows.Forms.ComboBox cmbDay;
         private System.Windows.Forms.Button btnAnalyze;
         private System.Windows.Forms.Label Res;
+        private System.Windows.Forms.TextBox txtNum;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label NumLbl;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtAge;
+        private System.Windows.Forms.TextBox txtIncome;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnCheck;
+        private System.Windows.Forms.Label label4;
     }
 }
