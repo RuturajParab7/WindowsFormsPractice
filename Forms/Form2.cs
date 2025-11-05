@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace PracticeApplication
 {
@@ -179,6 +180,35 @@ namespace PracticeApplication
             {
                 label4.Text = "Please enter a valid age.";
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string name = textBox1.Text;
+            int marks;
+
+            if (string.IsNullOrWhiteSpace(name))
+            {
+                label8.Text = "Please enter the student's name.";
+                return;
+            }
+
+            if (!int.TryParse(textBox2.Text, out marks))
+            {
+                label8.Text = "Please enter valid marks.";
+                return;
+            }
+
+            // Create and use the Student object
+            Student student = new Student
+            {
+                Name = name,
+                Marks = marks
+            };
+
+            student.EvaluateGrade();
+
+            label8.Text = $"Student: {student.Name}\nMarks: {student.Marks}\nGrade: {student.Grade}";
         }
     }
 }
