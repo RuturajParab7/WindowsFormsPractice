@@ -10,3 +10,4 @@ C:\Users\Ruturaj\source\repos\DebuggingPractice\PracticeApplication\PracticeAppl
 C:\Users\Ruturaj\source\repos\DebuggingPractice\PracticeApplication\PracticeApplication\obj\Debug\PracticeApplication.pdb
 C:\Users\Ruturaj\source\repos\DebuggingPractice\PracticeApplication\PracticeApplication\obj\Debug\PracticeApplication.exe.config
 C:\Users\Ruturaj\source\repos\DebuggingPractice\PracticeApplication\PracticeApplication\obj\Debug\PracticeApplication.Form2.resources
+C:\Users\Ruturaj\source\repos\DebuggingPractice\PracticeApplication\PracticeApplication\obj\Debug\PracticeApplication.Form3.resources

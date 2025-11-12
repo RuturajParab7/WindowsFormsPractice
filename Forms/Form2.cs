@@ -210,5 +210,12 @@ namespace PracticeApplication
 
             label8.Text = $"Student: {student.Name}\nMarks: {student.Marks}\nGrade: {student.Grade}";
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form3 form3 = new Form3();  // Create instance of Form3
+            form3.Show();               // Show Form3
+            this.Hide();
+        }
     }
 }
