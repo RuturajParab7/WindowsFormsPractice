@@ -39,6 +39,13 @@
             this.label4 = new System.Windows.Forms.Label();
             this.btnGenerate = new System.Windows.Forms.Button();
             this.tblResult = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtA = new System.Windows.Forms.TextBox();
+            this.txtB = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.AssignOps = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -136,11 +143,78 @@
             this.tblResult.TabIndex = 10;
             this.tblResult.Text = "label5";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(137, 197);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(140, 16);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "Assignment Operators";
+            // 
+            // txtA
+            // 
+            this.txtA.Location = new System.Drawing.Point(96, 245);
+            this.txtA.Name = "txtA";
+            this.txtA.Size = new System.Drawing.Size(100, 22);
+            this.txtA.TabIndex = 12;
+            // 
+            // txtB
+            // 
+            this.txtB.Location = new System.Drawing.Point(96, 286);
+            this.txtB.Name = "txtB";
+            this.txtB.Size = new System.Drawing.Size(100, 22);
+            this.txtB.TabIndex = 13;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(37, 245);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(47, 16);
+            this.label6.TabIndex = 14;
+            this.label6.Text = "Input A";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(40, 286);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(47, 16);
+            this.label7.TabIndex = 15;
+            this.label7.Text = "Input B";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(211, 265);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(85, 35);
+            this.button1.TabIndex = 16;
+            this.button1.Text = "Evaluate";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // AssignOps
+            // 
+            this.AssignOps.AutoSize = true;
+            this.AssignOps.Location = new System.Drawing.Point(361, 274);
+            this.AssignOps.Name = "AssignOps";
+            this.AssignOps.Size = new System.Drawing.Size(44, 16);
+            this.AssignOps.TabIndex = 17;
+            this.AssignOps.Text = "label8";
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1130, 590);
+            this.Controls.Add(this.AssignOps);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.txtB);
+            this.Controls.Add(this.txtA);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.tblResult);
             this.Controls.Add(this.btnGenerate);
             this.Controls.Add(this.label4);
@@ -172,5 +246,12 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnGenerate;
         private System.Windows.Forms.Label tblResult;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtA;
+        private System.Windows.Forms.TextBox txtB;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label AssignOps;
     }
 }

@@ -77,5 +77,80 @@ namespace PracticeApplication
 
             tblResult.Text = output;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int A, B;
+
+            if (!int.TryParse(txtA.Text, out A) || !int.TryParse(txtB.Text, out B))
+            {
+                lblResult.Text = "Please enter valid integers for A and B.";
+                return;
+            }
+
+            string output = "";
+
+            int C;
+
+            // Simple Assignment
+            C = A + B;
+            output += $"C = A + B → C = {C}\n";
+
+            // Add and Assign
+            C += A;
+            output += $"C += A → C = {C}\n";
+
+            // Subtract and Assign
+            C -= B;
+            output += $"C -= B → C = {C}\n";
+
+            // Multiply and Assign
+            C *= A;
+            output += $"C *= A → C = {C}\n";
+
+            // Divide and Assign (avoid divide by zero)
+            if (B != 0)
+            {
+                C /= B;
+                output += $"C /= B → C = {C}\n";
+            }
+            else
+            {
+                output += $"C /= B → Cannot divide by zero\n";
+            }
+
+            // Modulus and Assign
+            if (A != 0)
+            {
+                C %= A;
+                output += $"C %= A → C = {C}\n";
+            }
+            else
+            {
+                output += $"C %= A → Cannot perform modulus by zero\n";
+            }
+
+            // Left Shift and Assign
+            C <<= 2;
+            output += $"C <<= 2 → C = {C}\n";
+
+            // Right Shift and Assign
+            C >>= 1;
+            output += $"C >>= 1 → C = {C}\n";
+
+            // Bitwise AND and Assign
+            C &= 2;
+            output += $"C &= 2 → C = {C}\n";
+
+            // Bitwise XOR and Assign
+            C ^= 2;
+            output += $"C ^= 2 → C = {C}\n";
+
+            // Bitwise OR and Assign
+            C |= 2;
+            output += $"C |= 2 → C = {C}\n";
+
+            AssignOps.Text = output;
+        }
     }
 }
