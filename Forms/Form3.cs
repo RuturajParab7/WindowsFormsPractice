@@ -152,5 +152,43 @@ namespace PracticeApplication
 
             AssignOps.Text = output;
         }
+
+
+        int secretNumber = 7;
+        bool guessedCorrectly = false;
+        private void btnSubmit_Click(object sender, EventArgs e)
+        {
+            int guess;
+
+            if (!int.TryParse(txtGuess.Text, out guess))
+            {
+                lblFeedback.Text = "Please enter a valid number.";
+                return;
+            }
+
+            // Simulate the do-while loop behavior
+            if (!guessedCorrectly)
+            {
+                lblFeedback.Text = $"Number to be guessed is: {guess}\n";
+
+                if (guess < secretNumber)
+                {
+                    lblFeedback.Text += "Too low! Try again.";
+                }
+                else if (guess > secretNumber)
+                {
+                    lblFeedback.Text += "Too high! Try again.";
+                }
+                else
+                {
+                    lblFeedback.Text += "🎉 Congratulations! You guessed the correct number.";
+                    guessedCorrectly = true;
+                }
+            }
+            else
+            {
+                lblFeedback.Text = "Game over. You already guessed it!";
+            }
+        }
     }
 }

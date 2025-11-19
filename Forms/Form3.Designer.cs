@@ -46,6 +46,11 @@
             this.label7 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.AssignOps = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtGuess = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.btnSubmit = new System.Windows.Forms.Button();
+            this.lblFeedback = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -203,11 +208,60 @@
             this.AssignOps.TabIndex = 17;
             this.AssignOps.Text = "label8";
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(685, 217);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(111, 16);
+            this.label8.TabIndex = 18;
+            this.label8.Text = "DO WHILE LOOP";
+            // 
+            // txtGuess
+            // 
+            this.txtGuess.Location = new System.Drawing.Point(688, 254);
+            this.txtGuess.Name = "txtGuess";
+            this.txtGuess.Size = new System.Drawing.Size(100, 22);
+            this.txtGuess.TabIndex = 19;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(567, 257);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(115, 16);
+            this.label9.TabIndex = 20;
+            this.label9.Text = "Guess the number";
+            // 
+            // btnSubmit
+            // 
+            this.btnSubmit.Location = new System.Drawing.Point(823, 253);
+            this.btnSubmit.Name = "btnSubmit";
+            this.btnSubmit.Size = new System.Drawing.Size(75, 23);
+            this.btnSubmit.TabIndex = 21;
+            this.btnSubmit.Text = "Submit";
+            this.btnSubmit.UseVisualStyleBackColor = true;
+            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
+            // 
+            // lblFeedback
+            // 
+            this.lblFeedback.AutoSize = true;
+            this.lblFeedback.Location = new System.Drawing.Point(669, 307);
+            this.lblFeedback.Name = "lblFeedback";
+            this.lblFeedback.Size = new System.Drawing.Size(151, 16);
+            this.lblFeedback.TabIndex = 22;
+            this.lblFeedback.Text = "Guessed number Result";
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1130, 590);
+            this.Controls.Add(this.lblFeedback);
+            this.Controls.Add(this.btnSubmit);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.txtGuess);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.AssignOps);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label7);
@@ -253,5 +307,10 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label AssignOps;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox txtGuess;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button btnSubmit;
+        private System.Windows.Forms.Label lblFeedback;
     }
 }
